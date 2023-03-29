@@ -1,0 +1,94 @@
+/* Logo font family */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+
+header{
+    color: white;
+}
+nav{
+    display: flex;
+    height: 15vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--bgColor);
+}
+nav .logo{
+    font-size: 30px;
+    font-family: 'Alkatra', cursive;
+    cursor: pointer;
+}
+nav .menu ul{
+    display: flex;
+}
+nav .menu ul li{
+    list-style: none;
+    padding: 0 15px;
+    position: relative;
+}
+nav .menu ul li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: white;
+    top: 2.3em;
+    left: 15px;
+    transition: .5s;
+}
+nav .menu ul li:hover:after{
+    width: 75%;
+}
+nav .menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+nav .menu ul button{
+    padding: 8px 25px;
+    border: none;
+    color: var(--bgColor);
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 2rem;
+    transition: .3s ease-in-out;
+}
+nav .menu ul button:hover{
+    transform: scale(1.12);
+}
+.fa-solid{
+    font-size: 30px;
+}
+.fa-bars-staggered{
+    display: none !important;
+}
+@media(width < 1048px){
+    nav .menu ul li a{
+        font-size: 20px;
+    }
+    nav .logo{
+        font-size: 25px;
+    }
+    nav .menu ul button{
+        font-size: 15px;
+    }
+}
+@media (width < 801px) {
+    nav .menu ul{
+        flex-direction: column;
+        gap: 2rem;
+        position: absolute;
+        top: -41%;
+        right: 0;
+        width: 57vw;
+        justify-content: center;
+        align-items: start;
+        transition: 1s;
+        z-index: -1;
+    }
+    nav .menu ul button{
+        margin-left: 0;
+    }
+    .fa-bars-staggered{
+        display: block !important;
+    }
+}

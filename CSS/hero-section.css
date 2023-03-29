@@ -1,0 +1,30 @@
+.hero-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 85vh;
+}
+.bg img{
+    width: 15rem;
+    position: absolute;
+    z-index: -1;
+    filter: blur(10px);
+    margin: 50px;
+}
+.img-1{
+    top: 7rem;
+    left: 12rem;
+}
+.img-2{
+    bottom: 5rem;
+    right: 8rem;
+}
+.img-3{
+    bottom: 5rem;
+    left: 31rem;
+}
+.img-4{
+    right: 30rem;
+    top: 7rem;
+}
