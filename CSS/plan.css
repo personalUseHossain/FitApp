@@ -1,0 +1,40 @@
+.plan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: black;
+    padding: 100px 0;
+    gap: 5rem;
+    background: whitesmoke;
+    font-weight: 100;
+    position: relative;
+}
+.plan-txt{
+    width: 48rem;
+    text-align: center;
+}
+.plan-txt h1{
+    font-size: 35px;
+}
+.plan-txt h1 span{
+    color: var(--bgColor);
+}
+.plan-txt p{
+    font-size: 20px;
+    margin: 13px 0;
+}
+.plan img{
+
+    width: 46rem;
+}
+
+@media (width < 829px) {
+    .plan img{
+        width: 100vw;
+    }
+    .plan-txt{
+        width: 85vw;
+    }
+}
