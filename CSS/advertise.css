@@ -1,0 +1,42 @@
+.advertise{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    align-items: center;
+    letter-spacing: 1px;
+    height: 100vh;
+}
+.advertise-txt h1{
+    font-size: 48px;
+    font-weight: 100;
+}
+.advertise-txt p{
+    font-size: 18px;
+}
+.advertise-txt h1 span{
+    color: var(--bgColor);
+}
+.advertise-txt{
+    width: 33vw;
+}
+.advertise img{
+    width: 32rem;
+}
+@media (width < 975px) {
+    .advertise{
+        flex-direction: column;
+        padding: 100px 0;
+        text-align: center;
+        height: 100%;
+    }
+    .advertise-txt{width: 77vw;}
+    .advertise img{
+        width: 24rem;
+    }
+}
+@media (width < 406px){
+    .advertise img{
+        width: ;
+    }
+}

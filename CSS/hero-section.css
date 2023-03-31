@@ -3,13 +3,16 @@
    justify-content: space-around;
    align-items: center;
    flex-direction: row;
-   height: 85vh;
+   height: 100vh;
    color: white;
    letter-spacing: 1px;
 }
+.bg{
+    z-index: -2;
+}
 .bg img{
     width: 15rem;
-    position: absolute;
+    position: fixed;
     z-index: -1;
     filter: blur(10px);
     margin: 50px;
@@ -29,6 +32,9 @@
 .img-4{
     right: 30rem;
     top: 7rem;
+}
+.txt-left{
+    padding: 0 50px;
 }
 .txt-left h1{
     font-size: 50px;
@@ -50,14 +56,44 @@
     border: 2px solid white;
     margin-top: 1rem;
 }
-.img-right img{
-    margin-top: 8rem;
-}
+
 .img-right{
-    background: url(/Images/heroagain.png);
     width: 30vw;
-    height: 90vh;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-size: 25rem;
+    height: 103vh;
+    justify-self: baseline;
+    display: flex;
+    align-items: end;
+}
+@media (width < 1348px){
+    .hero-container{
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 9rem;
+        height: 100%;
+    }
+    .img-right img{
+        width: 18rem;
+    }
+    .txt-left p{
+        font-size: 18px;
+        
+    }
+    .img-right{
+        height: 77vh;
+        width: 100vw;
+        justify-content: center;
+    }
+    .txt-left h1{
+        font-size: 35px;
+    }
+}
+@media (width < 465px){
+    .txt-left button{
+        font-size: 15px;
+        padding: 5px;
+    }
+    .img-right{
+        display: flex;
+        justify-content: center;
+    }
 }
