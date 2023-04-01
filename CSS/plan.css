@@ -16,7 +16,8 @@
     text-align: center;
 }
 .plan-txt h1{
-    font-size: 35px;
+    font-size: 40px;
+    font-weight: 200;
 }
 .plan-txt h1 span{
     color: var(--bgColor);
@@ -26,7 +27,7 @@
     margin: 13px 0;
 }
 .plan img{
-
+    transition-delay: 300ms;
     width: 46rem;
 }
 

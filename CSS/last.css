@@ -1,0 +1,40 @@
+.last{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    width: 100vw;
+    color: white;
+    letter-spacing: 2px;
+    gap: 10px;
+}
+.last h1{
+    font-size: 45px;
+    font-weight: 200;
+}
+.last h1 span{
+    font-weight: 900;
+}
+.last p{
+    font-size: 18px;
+}
+.last button{
+    padding: 8px 35px;
+    border: none;
+    color: var(--bgColor);
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 2rem;
+    transition: .3s ease-in-out;
+    margin-top: 5rem;
+    text-align: center;
+}
+.last button:hover{
+    transform: scale(1.1);
+}
+@media(width < 455px){
+    .last p{
+        width: 15rem;
+    }
+}

@@ -15,4 +15,38 @@ button, i, a{
 body{
     background-color: var(--bgColor);
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
+
+
+/* for bottom observer */
+.bottom{
+    opacity: 0;
+    transform: translateY(20rem);
+    transition: 1s all;
+    filter: blur(5px);
+}
+.bottom-show{
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+}
+    /* for bottom observer */
+
+
+
+
+    /* for rigth observer */
+    .right{
+        opacity: 0;
+        transform: translateX(10rem);
+        transition: 1s all;
+        filter: blur(5px);
+    }
+    .right-show{
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0px);
+    }
+    /* for right observer */
+

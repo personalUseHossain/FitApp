@@ -19,6 +19,7 @@
 }
 .advertise-txt{
     width: 33vw;
+    transition-delay: 300ms;
 }
 .advertise img{
     width: 32rem;
