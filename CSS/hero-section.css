@@ -6,6 +6,7 @@
    height: 100vh;
    color: white;
    letter-spacing: 1px;
+   overflow: hidden;
 }
 .bg{
     z-index: -2;

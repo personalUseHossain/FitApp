@@ -4,10 +4,14 @@
 
 header{
     color: white;
+    overflow: hidden;
 }
 nav{
     display: flex;
     height: 7.5rem;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
     justify-content: space-around;
     align-items: center;
     background-color: var(--bgColor);
@@ -77,19 +81,26 @@ nav .menu ul button:hover{
     nav .menu ul{
         flex-direction: column;
         gap: 2rem;
-        position: absolute;
-        top: -41%;
-        right: 0;
-        width: 57vw;
-        justify-content: center;
-        align-items: start;
         transition: 1s;
-        z-index: -1;
+        z-index: 10;
+        position: fixed;
+        right: -100%;
+        top: 7rem;
+        background: var(--bgColor);
+        height: 45vh;
+        justify-content: center;
+        align-items: center;
+        width: 44vw;
+        border-radius: 10px;
     }
     nav .menu ul button{
         margin-left: 0;
     }
     .fa-bars-staggered{
         display: block !important;
+        /* position: absolute;
+        top: 2.5rem;
+        right: 3rem; */
     }
+
 }

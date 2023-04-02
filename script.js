@@ -8,10 +8,10 @@ let barBtn = document.querySelector(".fa-bars-staggered");
 barBtn.addEventListener("click", () => {
   if (barBtn.classList.contains("fa-bars-staggered")) {
     barBtn.classList.replace("fa-bars-staggered", "fa-xmark");
-    dropdown.style.top = "8em";
+    dropdown.style.right = "0";
   } else if (barBtn.classList.contains("fa-xmark")) {
     barBtn.classList.replace("fa-xmark", "fa-bars-staggered");
-    dropdown.style.top = "-41%";
+    dropdown.style.right = "-100%";
   }
 });
 

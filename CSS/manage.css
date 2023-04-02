@@ -4,6 +4,7 @@
     align-items: center;
     padding: 100px 0;
     background: white;
+    overflow: hidden;
 }
 .manage-txt{
     width: 40rem;
