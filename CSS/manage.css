@@ -4,7 +4,6 @@
     align-items: center;
     padding: 100px 0;
     background: white;
-    overflow: hidden;
 }
 .manage-txt{
     width: 40rem;
@@ -22,6 +21,7 @@
 .manage-item{
     display: grid;
     gap: 2rem;
+    transition-delay: 500ms;
 }
 .manage-item img{
     width: 7rem;

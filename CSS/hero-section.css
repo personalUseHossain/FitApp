@@ -6,13 +6,12 @@
    height: 100vh;
    color: white;
    letter-spacing: 1px;
-   overflow: hidden;
 }
 .bg{
     z-index: -2;
 }
 .bg img{
-    width: 15rem;
+    width: 11rem;
     position: fixed;
     z-index: -1;
     filter: blur(10px);
@@ -24,7 +23,7 @@
 }
 .img-2{
     bottom: 5rem;
-    right: 8rem;
+    right: 12rem;
 }
 .img-3{
     bottom: 5rem;
@@ -36,6 +35,7 @@
 }
 .txt-left{
     padding: 0 50px;
+    margin-top: 5rem;
 }
 .txt-left h1{
     font-size: 50px;
@@ -59,11 +59,15 @@
 }
 
 .img-right{
-    width: 30vw;
-    height: 103vh;
+    width: 25vw;
+    height: 80vh;
     justify-self: baseline;
     display: flex;
     align-items: end;
+    margin-top: 6rem;
+}
+.img-right img{
+    width: 20rem;
 }
 @media (width < 1348px){
     .hero-container{
@@ -71,6 +75,9 @@
         justify-content: space-between;
         margin-top: 9rem;
         height: 100%;
+    }
+    .txt-left{
+        margin-top: 7rem;
     }
     .img-right img{
         width: 18rem;
