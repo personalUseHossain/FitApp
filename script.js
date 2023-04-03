@@ -15,6 +15,28 @@ barBtn.addEventListener("click", () => {
   }
 });
 
+// making the navbar visible when scrolling to top and make it disappear when scrolling to down
+
+// variable
+// let navbar = document.querySelector("header");
+
+// function
+// window.addEventListener("wheel", scrollCheck);
+
+// function scrollCheck(event) {
+//   if (updowncheck(event)) {
+//     navbar.style.display = "block";
+//   } else {
+//     navbar.style.display = "none";
+//   }
+// }
+// function updowncheck(event) {
+//   if (event.wheelDelta) {
+//     return event.wheelDelta > 0;
+//   }
+//   return event.deltaY < 0;
+// }
+
 // Navigation bar dropdown toggle function  ends
 
 // Fruit moving on mouse move
